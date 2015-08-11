@@ -16,7 +16,7 @@ public class DetailFragment extends Fragment {
 
 
     public DetailFragment() {
-        
+
     }
 
 
@@ -26,6 +26,9 @@ public class DetailFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_detail, container, false);
     }
+
+
+
 
 
 }
