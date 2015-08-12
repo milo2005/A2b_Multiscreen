@@ -17,14 +17,20 @@ public class DetailFragment extends Fragment {
 
 
     TextView txt;
+    int pos;
 
     public DetailFragment() {}
+
+    public void init(int pos){
+        this.pos = pos;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_detail, container, false);
         txt = (TextView) v.findViewById(R.id.txt);
+        setColor(pos);
         return v;
     }
 
