@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import creatic.movil.multiscreen.R;
 
@@ -15,16 +16,16 @@ import creatic.movil.multiscreen.R;
 public class DetailFragment extends Fragment {
 
 
-    public DetailFragment() {
+    TextView txt;
 
-    }
-
+    public DetailFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false);
+        View v = inflater.inflate(R.layout.fragment_detail, container, false);
+        txt = (TextView) v.findViewById(R.id.txt);
+        return v;
     }
 
 
