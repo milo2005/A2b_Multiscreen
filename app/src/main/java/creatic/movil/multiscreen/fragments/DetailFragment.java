@@ -28,6 +28,15 @@ public class DetailFragment extends Fragment {
         return v;
     }
 
+    public void setColor(int color){
+        String colorName[] = getActivity().getResources()
+                .getStringArray(R.array.colors_name);
+        int colors[] = getActivity().getResources()
+                .getIntArray(R.array.colors);
+
+        txt.setText(colorName[color]);
+        txt.setBackgroundColor(colors[color]);
+    }
 
 
 
