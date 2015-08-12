@@ -7,10 +7,15 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    boolean port, phone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_main);
+
+        port = getResources().getBoolean(R.bool.port);
+        phone = getResources().getBoolean(R.bool.phone);
 
 
     }
@@ -37,3 +42,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
